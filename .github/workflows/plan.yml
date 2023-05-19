@@ -17,7 +17,7 @@ jobs:
       - name: digger run
         uses: duoctranth/digger@8f604fdcd6320b324b69bd4e30d4145261e71981
         with:
-          disable_locking: true
+          disable-locking: true
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
