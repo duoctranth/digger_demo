@@ -17,10 +17,7 @@ jobs:
       - name: digger run
         uses: diggerhq/digger@119914076e645d5662e54ead794b2a34525f822f
         with:
-          setup-aws: true
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-east-1
+          disable_locking: true
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
