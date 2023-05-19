@@ -15,7 +15,7 @@ jobs:
 
     steps:
       - name: digger run
-        uses: diggerhq/digger@v0.1.19
+        uses: diggerhq/digger@119914076e645d5662e54ead794b2a34525f822f
         with:
           setup-aws: true
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
