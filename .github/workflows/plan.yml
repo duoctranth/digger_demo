@@ -15,7 +15,7 @@ jobs:
 
     steps:
       - name: digger run
-        uses: diggerhq/digger@119914076e645d5662e54ead794b2a34525f822f
+        uses: duoctranth/digger@8f604fdcd6320b324b69bd4e30d4145261e71981
         with:
           disable_locking: true
         env:
